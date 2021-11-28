@@ -1,6 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body {
-	font-family: "Montserrat", sans-serif;
-    color: #3e4245; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white; 
+    margin: 0;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh 0;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2 {
+    align-self: center;
+    margin: 0;
+}
+
+.lhvr {
+    text-decoration: none;
+    color: white;
+    padding: 1vw;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.lhvr:hover {
+    color: rgb(230, 93, 93);
+    transition: all ease-in-out 100ms;
+}
+
+.presale {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(161, 15, 15);
+    opacity: 1;
+    padding: 1vw 2vw;
+    margin-left: 1vw;
+    border: 2px solid white;
+    border-radius: 50px; 
+    transition: all ease-in-out 100ms;
+}
+
+.presale:hover {    
+    color: white;
+    border: 2px solid rgb(230, 93, 93);
+    background-color: rgb(230, 93, 93);
+    transition: all ease-in-out 100ms;
+}
+
+.main {
+    background-image: url("https://media.discordapp.net/attachments/690346295516463134/914620096557756506/download_2.png?width=1440&height=621");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.links {
+    display: flex;
+}
+
+.titletxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 20px;
+}
+
+.presale2 {
+    color: white;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    border: 2px solid white;
+    transition: all ease-in-out 100ms;
+    font-size: 15px;
+}
+
+.presale2:hover {    
+    color: white;
+    border: 2px solid rgb(230, 93, 93);
+    background-color: rgb(230, 93, 93);
+    transition: all ease-in-out 100ms;
+}
+
+.backstory {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+.bstext {
+    display: flex;
+    flex-direction: column;
+}
+
+.bstext h1 {
+    padding-top: 5vh;
+}
+
+.bstext h2 {
+    padding: 5vh 9.5vw;
+    text-align: justify;
+}
+
+.nfts1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+}
+
+.nfts1 img {
+    width: 20vw;
+    border-radius: 10px;
+    filter: brightness(50%);
+    transition: all ease-in-out 100ms;
+}
+
+.nfts1 img:hover {
+    filter: brightness(100%);
+    transition: all ease-in-out 100ms;
+    cursor: pointer;
+}
+
+.playtoearn {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
 }
