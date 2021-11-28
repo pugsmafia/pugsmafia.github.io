@@ -11,12 +11,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 2vh 0;
-    background-color: black;
 }
 
 .title {
     display: flex;
     flex-direction: row;
+    margin-right: 15vw;
 }
 
 h1, h2 {
@@ -48,6 +48,7 @@ h1, h2 {
     border: 2px solid white;
     border-radius: 50px; 
     transition: all ease-in-out 100ms;
+    margin-left: 15vw;
 }
 
 .presale:hover {    
@@ -57,8 +58,11 @@ h1, h2 {
     transition: all ease-in-out 100ms;
 }
 
+.bg {
+    background: url('https://media.discordapp.net/attachments/912012302830694410/914647542036312084/Ilustracion_sin_titulo.png?width=701&height=701');
+}
+
 .main {
-    background-image: url("https://media.discordapp.net/attachments/690346295516463134/914620096557756506/download_2.png?width=1440&height=621");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
@@ -68,8 +72,19 @@ h1, h2 {
     height: 85vh;
 }
 
+.mainimg img {
+    border-radius: 20px;
+    margin-left: 5vw;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.titletxt h1 {
+    align-self: flex-end;
+}
+
 .links {
     display: flex;
+    align-items: start;
 }
 
 .titletxt {
@@ -105,7 +120,7 @@ h1, h2 {
 .backstory {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: #080808;
 }
 
 .bstext {
@@ -115,6 +130,7 @@ h1, h2 {
 
 .bstext h1 {
     padding-top: 5vh;
+    font-size: 60px;
 }
 
 .bstext h2 {
@@ -134,6 +150,8 @@ h1, h2 {
     border-radius: 10px;
     filter: brightness(50%);
     transition: all ease-in-out 100ms;
+    box-shadow:  10px 10px 20px #171717,
+             -10px -10px 20px #2b2b2b;
 }
 
 .nfts1 img:hover {
@@ -145,5 +163,136 @@ h1, h2 {
 .playtoearn {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background: black;
 }
+
+.playtoearn h1 {
+    font-size: 60px;
+}
+
+.phases {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1vw;
+}
+
+.neu1 {
+    width: 20vw;
+    height: 50vh;
+    background: linear-gradient(145deg, #090909, #070707);
+    box-shadow:  10px 10px 20px #050505,
+                 -10px -10px 20px #0b0b0b;
+    margin: 2vw;
+    border-radius: 50px;
+}
+
+.ranks, .roadmap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #080808;
+}
+
+.tokendistribution {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: black;
+}
+
+.ranks h1, .tokendistribution h1, .roadmap h1 {
+    font-size: 60px;
+}
+
+.vertical-line {
+    border-left: 10px solid black;
+    height: 100%;
+    position:absolute;
+    left: 50%;
+}
+
+.divide-ranks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #2c2c2c;
+}
+
+.divide-ranks h1 {
+    text-align: center;
+}
+
+.pugs-ranks, .guns-ranks {
+    width: 50%;
+    height: 100%;
+    
+}
+
+/*
+.rank-desc {
+    width: 60%;
+    height: 55vh;
+    background: #2c2b2b;
+    box-shadow:  10px 10px 20px #050505,
+                 -10px -10px 20px #0b0b0b;
+    margin: 2vw;
+    border-radius: 50px;
+}
+
+.rank-photo {
+    width: 40%;
+    height: 55vh;
+    background: #2c2b2b;
+    box-shadow:  10px 10px 20px #050505,
+                 -10px -10px 20px #0b0b0b;
+    margin: 2vw;
+    border-radius: 50px;
+}
+
+.rank-select-photo {
+    width: 10%;
+    height: 18vh;
+    background: #2c2b2b;
+    box-shadow:  10px 10px 20px #050505,
+                 -10px -10px 20px #0b0b0b;
+    margin: 2vw;
+    border-radius: 50px;
+}
+
+.rank-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rank-photo-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
