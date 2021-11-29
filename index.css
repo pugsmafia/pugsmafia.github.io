@@ -78,10 +78,6 @@ h1, h2 {
     filter: drop-shadow(0 0 0.75rem crimson);
 }
 
-.titletxt h1 {
-    align-self: flex-end;
-}
-
 .links {
     display: flex;
     align-items: start;
@@ -216,12 +212,33 @@ h1, h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: #2c2c2c;
 }
 
 .divide-ranks h1 {
     text-align: center;
+    background: #2c2c2c;
 }
+
+.pugs-ranks-div, .guns-ranks-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.pugs-ranks img, .guns-ranks img {
+    width: 40%;
+    bottom: 15px;
+}
+
+.pugs-desc, .guns-desc {
+    border: 2px solid white;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 500px;
+}
+
 
 .pugs-ranks, .guns-ranks {
     width: 50%;
@@ -229,51 +246,22 @@ h1, h2 {
     
 }
 
-/*
-.rank-desc {
-    width: 60%;
-    height: 55vh;
-    background: #2c2b2b;
+.pugs-button, .guns-button {
+    width: 25%;
+    height: 20vh;
+    background: #241d1d;
     box-shadow:  10px 10px 20px #050505,
                  -10px -10px 20px #0b0b0b;
     margin: 2vw;
-    border-radius: 50px;
+    border-radius: 20px;
+    padding-top: 70px;
 }
 
-.rank-photo {
-    width: 40%;
-    height: 55vh;
-    background: #2c2b2b;
-    box-shadow:  10px 10px 20px #050505,
-                 -10px -10px 20px #0b0b0b;
-    margin: 2vw;
-    border-radius: 50px;
-}
-
-.rank-select-photo {
-    width: 10%;
-    height: 18vh;
-    background: #2c2b2b;
-    box-shadow:  10px 10px 20px #050505,
-                 -10px -10px 20px #0b0b0b;
-    margin: 2vw;
-    border-radius: 50px;
-}
-
-.rank-flex {
+.pugs-button-flex, .guns-button-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
-.rank-photo-select {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-*/
-
-
 
 
 
