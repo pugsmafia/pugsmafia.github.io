@@ -76,6 +76,12 @@ h1, h2 {
     border-radius: 20px;
     margin-left: 5vw;
     filter: drop-shadow(0 0 0.75rem crimson);
+    transition: all ease-in-out 100ms;
+}   
+
+.mainimg img:hover {
+    filter: drop-shadow(0 0 1.5rem crimson);
+    transition: all ease-in-out 100ms;
 }
 
 .links {
@@ -115,54 +121,61 @@ h1, h2 {
 
 .backstory {
     display: flex;
-    flex-direction: column;
-    background-color: #080808;
+    flex-direction: row;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
+    justify-content: space-between;
 }
 
 .bstext {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    align-self: center;
 }
 
 .bstext h1 {
-    padding-top: 5vh;
+    padding: 1vh 10vw 1vh 1vw; 
     font-size: 60px;
+    align-self: unset;
+    text-align: right;
 }
 
 .bstext h2 {
-    padding: 5vh 9.5vw;
-    text-align: justify;
+    padding: 1vh 10vw 1vh 1vw;
+    text-align: right;
+    font-size: 26px;
 }
 
-.nfts1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 5vh;
-}
-
-.nfts1 img {
-    width: 20vw;
+.bsimg {
+    margin: 5vw 10vw;
+    width: 30vw;
+    height: 30vw;
+    background-image: url('https://media.discordapp.net/attachments/912012302830694410/914894175160401950/The_Pug_Mafi.png?width=701&height=701');
+    background-size: cover;
+    align-self: center;
     border-radius: 10px;
-    filter: brightness(50%);
+    filter: drop-shadow(0 0 0.75rem crimson);
     transition: all ease-in-out 100ms;
-    box-shadow:  10px 10px 20px #171717,
-             -10px -10px 20px #2b2b2b;
 }
 
-.nfts1 img:hover {
-    filter: brightness(100%);
+.bsimg:hover {
+    filter: drop-shadow(0 0 1.5rem crimson);
     transition: all ease-in-out 100ms;
-    cursor: pointer;
 }
 
 .playtoearn {
     display: flex;
     flex-direction: column;
-    background: black;
+    background-image: url('https://media.discordapp.net/attachments/690346295516463134/914620096557756506/download_2.png?width=1440&height=621');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;    
+    padding-bottom: 10vh;
 }
 
 .playtoearn h1 {
+    margin-top: 10vh;
     font-size: 60px;
 }
 
@@ -174,13 +187,30 @@ h1, h2 {
 }
 
 .neu1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 20vw;
-    height: 50vh;
-    background: linear-gradient(145deg, #090909, #070707);
-    box-shadow:  10px 10px 20px #050505,
-                 -10px -10px 20px #0b0b0b;
+    height: 20vw;
     margin: 2vw;
-    border-radius: 50px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-text-stroke: #080808 0.5px;
+    filter: brightness(50%), drop-shadow(0 0 0.75rem crimson);
+    transition: all ease-in-out 100ms;
+}
+
+.neu1:hover {
+    filter: drop-shadow(0 0 1rem crimson);
+    transition: all ease-in-out 100ms;
+}
+
+.neu1 h2 {
+    font-size: 40px;
+}
+
+.neu1 p {
+    font-size: 20px;
 }
 
 .ranks, .roadmap {
@@ -223,64 +253,75 @@ h1, h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
-.pugs-ranks img, .guns-ranks img {
-    width: 40%;
+.pugs-ranks-div {
+    margin-right: 20vh;
+}
+
+.guns-ranks-div {
+    margin-right: 20vh;
+}
+
+.pugs-ranks img {
+    width: 35%;
+    bottom: 15px;
+}
+
+.guns-ranks img {
+    width: 50%;
     bottom: 15px;
 }
 
 .pugs-desc, .guns-desc {
     border: 2px solid white;
-    text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    max-width: 500px;
+    width: 35vh;
 }
 
-
-.pugs-ranks, .guns-ranks {
-    width: 50%;
-    height: 100%;
-    
-}
-
-.pugs-button, .guns-button {
-    width: 25%;
-    height: 20vh;
-    background: #241d1d;
-    box-shadow:  10px 10px 20px #050505,
-                 -10px -10px 20px #0b0b0b;
-    margin: 2vw;
-    border-radius: 20px;
-    padding-top: 70px;
-}
-
-.pugs-button-flex, .guns-button-flex {
+.guns-button-flex, .pugs-button-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-right: 15vh;
+    
 }
 
+.guns-button-flex img, .pugs-button-flex button {
+    width: 7vw;
+    border-radius: 10px;
+    filter: brightness(70%);
+    transition: all ease-in-out 100ms;
 
+}
 
+.pugs-button-flex button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 15vh;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+}
 
+.guns-button-flex img:hover, .pugs-button-flex button:hover {
+    filter: brightness(100%);
+    transition: all ease-in-out 100ms;
+    cursor: pointer;
+}
 
+.tokensplit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tokensplit img {
+    width: 70%;
+}
