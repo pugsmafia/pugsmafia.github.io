@@ -216,115 +216,126 @@ h1, h2 {
 .ranks {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background: #080808;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
+    padding: 10vh 0 20vh 0;
+}
+
+.t_ranks {
+    margin-bottom: 5vh;
+}
+
+.ranks-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .tokendistribution {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background: black;
-}
-
-.ranks h1, .tokendistribution h1 {
-    font-size: 60px;
-}
-
-.vertical-line {
-    border-left: 10px solid black;
-    height: 100%;
-    position:absolute;
-    left: 50%;
-}
-
-.divide-ranks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.divide-ranks h1 {
-    text-align: center;
-    background: #2c2c2c;
-}
-
-.pugs-ranks-div, .guns-ranks-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 80px;
-}
-
-.pugs-ranks-div {
-    margin-right: 10vh;
-}
-
-.guns-ranks-div {
-    margin-right: 1vh;
-}
-
-.pugs-ranks img {
-    width: 35%;
-    bottom: 15px;
-}
-
-.guns-ranks img {
-    width: 40%;
-    bottom: 15px;
-}
-
-.pugs-desc, .guns-desc {
-    border: 2px solid white;
-    padding-left: 5px;
-    padding-right: 25px;
-    width: 35vh;
-    margin: 5px;
-}
-
-.guns-button-flex, .pugs-button-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10vh;
-    margin-right: 5vh;
-    padding: 5px;
-    
-}
-
-.guns-button-flex img, .pugs-button-flex button {
-    width: 7vw;
-    border-radius: 10px;
-    filter: brightness(70%);
-    transition: all ease-in-out 100ms;
-    margin: 5px;
-
-}
-
-.pugs-button-flex button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    height: 15vh;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: white;
-}
-
-.guns-button-flex img:hover, .pugs-button-flex button:hover {
-    filter: brightness(100%);
-    transition: all ease-in-out 100ms;
-    cursor: pointer;
-}
-
-.tokensplit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    background: url('https://media.discordapp.net/attachments/912012302830694410/914647542036312084/Ilustracion_sin_titulo.png?width=701&height=701');
     align-items: center;
+    padding: 10vh 0;
 }
 
 .tokensplit img {
-    width: 70%;
+    display: flex;
+    align-self: center;
+}
+
+.ranks h1, .tokendistribution h1, .roadmap h1 {
+    font-size: 60px;
+}
+
+.pug-ranks {
+    display: flex;   
+    flex-direction: column;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.3rem rgb(220, 170, 20));
+    margin-left: 20vw;
+}
+
+.weapons {
+    display: flex;   
+    flex-direction: column;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.3rem rgb(220, 170, 20));
+    margin-right: 20vw;
+}
+
+.prl {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;    
+    border-right: none;
+    background-color: #080808;
+    width: 16vw;
+}
+
+.prl h2 { align-self: unset ;}
+
+#primg, #primg2 {
+    width: 20vw;
+}
+
+.prlbtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lebtn {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgba(0,0,0,0);
+    border: white 2px solid;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white; 
+    transition: all ease-in-out 100ms;
+}
+
+.lebtn:hover {
+    cursor: pointer;
+}
+
+.srank1:hover {
+    border-color: #ffc71f;
+    background-color: #ffc71f;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
+
+.arank1:hover {
+    border-color: #1f5fff;
+    background-color: #1f5fff;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
+
+.brank1:hover {
+    border-color: #1fff79;
+    background-color: #1fff79;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
+
+.crank1:hover {
+    border-color: #ff501f;
+    background-color: #ff501f;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
+
+.drank1:hover {
+    border-color: #6c6c6c;
+    background-color: #6c6c6c;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
+
+#chart {
+    margin-left: 5vw;
 }
