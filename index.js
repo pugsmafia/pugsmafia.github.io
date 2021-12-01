@@ -18,48 +18,61 @@ function runFunction() {
 }
 
 
-function showSRank() { 
-    document.getElementById("pug-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894175160401950/The_Pug_Mafi.png';
+function showSpug() { 
+    document.getElementById("primg").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894175160401950/The_Pug_Mafi.png';
+    document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #ffc71f)';
 } 
 
-function showARank() { 
-    document.getElementById("pug-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894174917103657/The_Pug_Mafi.png';
+function showApug() { 
+    document.getElementById("primg").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894174917103657/The_Pug_Mafi.png';
+    document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #1f5fff)';
 } 
 
-function showBRank() { 
-    document.getElementById("pug-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894174636109844/The_Pug_Mafi.png';
+function showBpug() { 
+    document.getElementById("primg").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894174636109844/The_Pug_Mafi.png';
+    document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #1fff79)';
 } 
 
-function showCRank() { 
-    document.getElementById("pug-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894173981769779/20684A90-CCCB-48EA-BC37-00846566B777.png';
+function showCpug() { 
+    document.getElementById("primg").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894173981769779/20684A90-CCCB-48EA-BC37-00846566B777.png';
+    document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #ff501f)';
 } 
 
-function showDRank() { 
-    document.getElementById("pug-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894173696589896/A8E50004-31D1-4E22-9215-DD612E112D9F.png';
+function showDpug() { 
+    document.getElementById("primg").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894173696589896/A8E50004-31D1-4E22-9215-DD612E112D9F.png';
+    document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #6c6c6c)';
+} 
+
+function showSgun() { 
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265480527932/C4E7CAF4-9BA2-414F-B564-020D4AC57C39.png';
+    document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #ffc71f)';
+} 
+
+function showAgun() { 
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265832865823/The_Pug_Mafi.png';
+    document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #1f5fff)';
+} 
+
+function showBgun() { 
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266159988756/The_Pug_Mafi.png';
+    document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #1fff79)';
+} 
+
+function showCgun() { 
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266445217843/The_Pug_Mafi.png';
+    document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #ff501f)';
+} 
+
+function showDgun() { 
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266696871947/The_Pug_Mafi.png';
+    document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #6c6c6c)';
 } 
 
 function upNDown() {
     document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/500))) +"px)";
-}
-
-function showGunA() {
-    document.getElementById("gun-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265480527932/C4E7CAF4-9BA2-414F-B564-020D4AC57C39.png';
-}
-
-function showGunB() {
-    document.getElementById("gun-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265832865823/The_Pug_Mafi.png';
-}
-
-function showGunC() {
-    document.getElementById("gun-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266159988756/The_Pug_Mafi.png';
-}
-
-function showGunD() {
-    document.getElementById("gun-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266445217843/The_Pug_Mafi.png';
-}
-
-function showGunE() {
-    document.getElementById("gun-photo").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266696871947/The_Pug_Mafi.png';
+    document.getElementsByClassName("pug-ranks")[0].style.transform = "translate(0, "+ 10*(Math.cos(Date.now() * (1/750))) +"px)";
+    document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/750))) +"px)";
+    document.getElementById("chart").style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/750))) +"px)";
 }
 
 function doUpAndDown() {
