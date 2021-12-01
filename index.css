@@ -339,3 +339,69 @@ h1, h2 {
 #chart {
     margin-left: 5vw;
 }
+
+footer {
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 5px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-content h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials button {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.scl:hover {
+    border-color: #1f5fff;
+    background-color: #1f5fff;
+    color: #080808;
+    transition: all ease-in-out 100ms;
+}
