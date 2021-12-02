@@ -43,15 +43,13 @@ function showDpug() {
     document.getElementsByClassName("pug-ranks")[0].style.filter = 'drop-shadow(0 0 0.3rem #6c6c6c)';
 } 
 
-
 function showSgun() { 
-    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266696871947/The_Pug_Mafi.png';
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265480527932/C4E7CAF4-9BA2-414F-B564-020D4AC57C39.png';
     document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #ffc71f)';
 } 
 
-
 function showAgun() { 
-    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266445217843/The_Pug_Mafi.png';
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265832865823/The_Pug_Mafi.png';
     document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #1f5fff)';
 } 
 
@@ -61,21 +59,22 @@ function showBgun() {
 } 
 
 function showCgun() { 
-    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265832865823/The_Pug_Mafi.png';
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266445217843/The_Pug_Mafi.png';
     document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #ff501f)';
 } 
 
-
 function showDgun() { 
-    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894265480527932/C4E7CAF4-9BA2-414F-B564-020D4AC57C39.png';
+    document.getElementById("primg2").src = 'https://cdn.discordapp.com/attachments/912012302830694410/914894266696871947/The_Pug_Mafi.png';
     document.getElementsByClassName("weapons")[0].style.filter = 'drop-shadow(0 0 0.3rem #6c6c6c)';
 } 
 
 function upNDown() {
-    document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/500))) +"px)";
-    document.getElementsByClassName("pug-ranks")[0].style.transform = "translate(0, "+ 10*(Math.cos(Date.now() * (1/750))) +"px)";
-    document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/750))) +"px)";
-    document.getElementById("chart").style.transform = "translate(0, "+ 10*(Math.sin(Date.now() * (1/750))) +"px)";
+    var now = Date.now();
+    var m1 = 10*(Math.cos(now * (1/750)));
+    document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ m1 +"px)";
+    //document.getElementsByClassName("pug-ranks")[0].style.transform = "translate(0, "+ 10*(Math.cos(now * (1/750))) +"px)";
+    //document.getElementsByClassName("bsimg")[0].style.transform = "translate(0, "+ 10*(Math.sin(now * (1/750))) +"px)";
+    document.getElementById("chart").style.transform = "translate(0, "+ 10*(Math.sin(now * (1/750))) +"px)";
 }
 
 function doUpAndDown() {
