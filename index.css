@@ -449,7 +449,9 @@ ul {
     margin-top: 0;
 }
 
-
+.linkemail {
+    color: white;
+}
 
 @media screen and (max-width: 1300px) {
 
