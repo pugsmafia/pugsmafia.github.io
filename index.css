@@ -65,7 +65,7 @@ h1, h2 {
 }
 
 .bg {
-    background: url('https://media.discordapp.net/attachments/912012302830694410/914647542036312084/Ilustracion_sin_titulo.png?width=701&height=701');
+    background: url('images/websitebg.png');
 }
 
 .main {
@@ -158,7 +158,7 @@ h1, h2 {
     margin: 5vw 10vw;
     width: 30vw;
     height: 30vw;
-    background-image: url('https://media.discordapp.net/attachments/912012302830694410/914894175160401950/The_Pug_Mafi.png?width=701&height=701');
+    background-image: url('images/websitebg.png');
     background-size: cover;
     align-self: center;
     border-radius: 10px;
@@ -174,7 +174,7 @@ h1, h2 {
 .playtoearn {
     display: flex;
     flex-direction: column;
-    background-image: url('https://media.discordapp.net/attachments/690346295516463134/914620096557756506/download_2.png?width=1440&height=621');    
+    background-image: url('images/pugsbg.png');    
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;    
@@ -240,7 +240,7 @@ h1, h2 {
 .tokendistribution {
     display: flex;
     flex-direction: column;
-    background: url('https://media.discordapp.net/attachments/912012302830694410/914647542036312084/Ilustracion_sin_titulo.png?width=701&height=701');
+    background: url('images/websitebg.png');
     align-items: center;
     padding: 10vh 0;
 }
